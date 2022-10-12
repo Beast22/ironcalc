@@ -1,0 +1,141 @@
+@import "./base.css";
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+.start-screen{
+    background: rgb(255, 255, 255);
+    padding: 3rem;
+}
+
+.screen-img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+}
+
+.screen-info{
+  display: inline-block;
+  vertical-align: middle;
+  width: 66%;
+  padding: 2rem 0 0 2rem;
+}
+
+.screen-title{
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #31a8db;
+    font-family: 'Rotondo', sans-serif;
+}
+
+.iron-calc-scale{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    width: 30px;
+}
+
+.iron-calc-scale__item {
+  font-family: 'Arial';
+  font-size:  .8rem;
+  line-height: 2;
+  position: relative;
+  color: #999;
+  display: flex;
+  flex-direction: column;
+}
+
+.iron-calc-scale__item:nth-child(1){
+  top: 4rem;
+}
+
+.iron-calc-scale__item:nth-child(2){
+  top: 7rem;
+}
+
+.iron-calc-scale__item:nth-child(3){
+  top: 10rem;
+}
+
+/* slider */
+
+#app .p-slider{
+  margin-bottom: 2rem;
+}
+
+#app .p-slider .p-slider-handle{
+  background: #31a8db;
+  font-size: 1.8rem;
+  z-index: 10;
+  width: 20%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  font-weight: normal;
+  left: 66.6667%;
+  text-align: center;
+  line-height: .6rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#app .begin .p-slider-handle{
+  background: #dadada;
+}
+
+.p-slider.p-slider-horizontal{
+  position: relative
+}
+
+
+/* button */
+
+#app .p-button.p-button-lg{
+  background-color: rgba(49,168,219, 1);
+  -webkit-box-shadow: 0 5px 9px rgb(49 168 219 / 50%);
+  -moz-box-shadow: 0 5px 9px rgba(49,168,219,.5);
+  -o-box-shadow: 0 5px 9px rgba(49,168,219,.5);
+  box-shadow: 0 5px 9px rgb(49 168 219 / 50%);
+  font-family: 'Rotondo', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#app .p-button.p-button-lg:hover{
+  box-shadow: none
+}
+
+/* buttons + - */
+
+.slider__but{
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 1px solid #31a8db;
+  color: #31a8db;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-size: auto auto;
+  z-index: 1;
+  text-align: center;
+  line-height: 1.9rem;
+}
+
+.slider__plus{
+  right: -38px;
+}
+
+.slider__minus{
+  left: -38px;
+}
+
+/* nested sliders */
+
+/* .product{
+  display: flex;
+} */
